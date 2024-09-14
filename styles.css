@@ -1,0 +1,58 @@
+/* Estilo para o fundo da página */
+body {
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Para cobrir toda a altura da página */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo do container principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Fundo branco com transparência */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos adicionais para o formulário de despesas */
+#despesa-form {
+    background-color: rgba(240, 240, 240, 0.85);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Botão de adicionar despesa */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+/* Estilo da lista de despesas */
+#despesa-list {
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 300px; /* Limita a altura da lista com rolagem */
+}
+
+.expense-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; 
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
